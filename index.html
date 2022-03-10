@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+    <head>
+        <title>吴宇铠</title>
+    </head>
+    <body>
+        十六进制码：<input id="HEX" type="text"><br>
+        <button onclick="covert()">转换</button>
+        <p id="display">
+        <script>
+            function convert()
+            {
+                let display = docment.getElementById("display");
+                let hex = docment.getElementById("HEX").value;
+                let str = eval("\"\\x" + hex.replace(" ", "\\x"));
+                display.innerText = str;
+            }
+        </script>
+    </body>
+</html>
