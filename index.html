@@ -10,8 +10,8 @@
         <script>
             function convert()
             {
-                let display = docment.getElementById("display");
-                let hex = docment.getElementById("HEX").value;
+                let display = document.getElementById("display");
+                let hex = document.getElementById("HEX").value;
                 let str = eval("\"\\x" + hex.replace(" ", "\\x"));
                 display.innerText = str;
             }
