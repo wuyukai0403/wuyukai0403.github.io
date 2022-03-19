@@ -12,7 +12,7 @@
             {
                 let display = document.getElementById("display");
                 let hex = document.getElementById("HEX").value;
-                let str = eval("\"\\x" + hex.replace(" ", "\\x"));
+                let str = eval("\"\\x" + hex.replace(" ", "\\x") + "\"");
                 display.innerText = str;
             }
         </script>
